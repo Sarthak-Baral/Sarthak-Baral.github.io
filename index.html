@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sarthak Baral — software engineer</title>
+<title>Sarthak Baral, software engineer</title>
 <meta name="description" content="Sarthak Baral: co-founder and CTO of PsyAIde, validation and reproducibility owner on an NVIDIA-sponsored Harvard capstone. Experience, projects, education and contact.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -121,22 +121,22 @@
 
     <div class="entry">
       <div class="line"><h3>Co-founder &amp; Chief Technology Officer</h3><span class="when">Feb 2026 – present</span></div>
-      <p class="org">PsyAIde, Inc. (psyaide.ai) — clinical decision-support for psychiatry</p>
+      <p class="org">PsyAIde, Inc. (psyaide.ai), clinical decision-support for psychiatry</p>
       <ul class="facts">
         <li>Sole engineering contributor to a clinical decision-support platform for psychiatric assessment, from architecture through deployment; shipped v0.5.0 within three months of founding. Co-founded with a clinician who leads the clinical side.</li>
         <li>Built the retrieval-grounded diagnostic pipeline: sparse retrieval over a 984-row clinical criteria corpus, clause-scoped negation handling, grounding-gap detection, and fail-closed clearance so the system abstains rather than guesses where evidence is insufficient.</li>
-        <li>FastAPI/PostgreSQL backend — 60 tables, 72 migrations, 290 API operations — with three React applications on AWS (RDS, S3, KMS, Secrets Manager, CloudTrail); HIPAA-aligned technical architecture with documented technical controls.</li>
+        <li>FastAPI/PostgreSQL backend (60 tables, 72 migrations, 290 API operations) with three React applications on AWS (RDS, S3, KMS, Secrets Manager, CloudTrail), on a HIPAA-aligned technical architecture with documented technical controls.</li>
         <li>2,159 automated tests, a nine-job CI pipeline and 185 recorded architecture decisions across ~74,000 lines of application code and ~37,000 of test code (repository figures as of September 2026).</li>
-        <li>Live pilot — pilot participants, not paying customers — across two deployment types: five independent psychiatrists in private practice, plus one residential facility serving ~37 users.</li>
+        <li>Live pilot across two deployment types: five independent psychiatrists in private practice, plus one residential facility serving ~37 users. Pilot participants, not paying customers.</li>
       </ul>
     </div>
 
     <div class="entry">
       <div class="line"><h3>Validation &amp; Reproducibility Owner</h3><span class="when">Jun 2026 – present</span></div>
-      <p class="org">NVIDIA-sponsored Physical AI Capstone, Harvard University Extension School — Group 1 (Digital Twin)</p>
+      <p class="org">NVIDIA-sponsored Physical AI Capstone, Harvard University Extension School, Group 1 (Digital Twin)</p>
       <ul class="facts">
         <li>Validation and reproducibility owner on Group 1 (Digital Twin) of an NVIDIA-sponsored Harvard capstone building a reproducible JWST digital twin and a closed-loop benchmark for learned autonomous spacecraft inspection.</li>
-        <li>Own seven deliverables — automated acceptance script, per-release validation renders, render regression suite, reconstruction drills, sensor/renderer alignment for training and evaluation — and operate the release gate on all three scene releases.</li>
+        <li>Own seven deliverables (automated acceptance script, per-release validation renders, render regression suite, reconstruction drills, sensor/renderer alignment for training and evaluation) and operate the release gate on all three scene releases.</li>
       </ul>
     </div>
 
@@ -172,7 +172,7 @@
       <div class="line"><h3>Llama-3-8B inference engine in C++/CUDA</h3><span class="when">Mar – May 2026</span></div>
       <p class="org">Big Data Systems (CS265), Harvard University Extension School</p>
       <ul class="facts">
-        <li>Built a Llama-3-8B forward pass from scratch in C++/CUDA on a course skeleton, with no PyTorch or HuggingFace at inference time — verified element-wise against a PyTorch reference across all 18 staff tests, including multi-token autoregressive generation, streaming a 27.6 GB model through 8 GB of VRAM.</li>
+        <li>Built a Llama-3-8B forward pass from scratch in C++/CUDA on a course skeleton, with no PyTorch or HuggingFace at inference time. Verified element-wise against a PyTorch reference across all 18 staff tests, including multi-token autoregressive generation, while streaming a 27.6 GB model through 8 GB of VRAM.</li>
       </ul>
     </div>
 
@@ -194,10 +194,10 @@
 
     <div class="entry">
       <div class="line"><h3>Cross-domain recommendation without shared users (joint research project)</h3><span class="when">Dec 2025 – Jun 2026</span></div>
-      <p class="org">Began in Advanced Machine Learning, Data Mining &amp; AI, Harvard University Extension School; continued as a co-authored research submission to the RecSys 2026 short-paper track, with Chloe Seo — being revised following peer review</p>
+      <p class="org">Began in Advanced Machine Learning, Data Mining &amp; AI, Harvard University Extension School; continued as a co-authored research submission to the RecSys 2026 short-paper track with Chloe Seo, now being revised following peer review</p>
       <ul class="facts">
-        <li>Quantified collision-induced ranking collapse in semantic-ID recommendation: 96.4–96.8% of catalogue items share an RQ-VAE code tuple, imposing an oracle HR@10 ceiling of 34–41% under perfect retrieval — a ranking failure, not a retrieval failure, independent of model quality.</li>
-        <li>Designed a cross-domain pipeline for domains sharing no user identifiers: SBERT lookalike matching → three-level RQ-VAE tokenisation → shared transformer with domain-specific heads and asymmetric InfoNCE alignment → collaborative reranker; full-catalogue evaluation over 36,671 books and 31,516 movies, three seeds, against nine external baselines.</li>
+        <li>Quantified collision-induced ranking collapse in semantic-ID recommendation: 96.4–96.8% of catalogue items share an RQ-VAE code tuple, imposing an oracle HR@10 ceiling of 34–41% under perfect retrieval. The failure is at ranking, not retrieval, and is independent of model quality.</li>
+        <li>Designed a cross-domain pipeline for domains sharing no user identifiers: SBERT lookalike matching, three-level RQ-VAE tokenisation, a shared transformer with domain-specific heads and asymmetric InfoNCE alignment, and a collaborative reranker. Full-catalogue evaluation over 36,671 books and 31,516 movies, three seeds, against nine external baselines.</li>
       </ul>
     </div>
 
@@ -213,7 +213,7 @@
       <div class="line"><h3>Evaluation-protocol study of LLM recommendation (joint project)</h3><span class="when">Apr – May 2026</span></div>
       <p class="org">Foundations of Large Language Models (CSCI E-222), Harvard University Extension School</p>
       <ul class="facts">
-        <li>Showed HR@10 rising from 0.0445 to 0.2667 on identical weights, data and candidate pool by replacing title generation with log-likelihood scoring — a measurement artefact, not a capability difference. Joint project (Seo first author); owned the implementation and experimental pipeline.</li>
+        <li>Showed HR@10 rising from 0.0445 to 0.2667 on identical weights, data and candidate pool by replacing title generation with log-likelihood scoring: a measurement artefact, not a capability difference. Joint project (Seo first author); owned the implementation and experimental pipeline.</li>
       </ul>
     </div>
   </section>
@@ -221,7 +221,7 @@
   <section id="code">
     <h2>Where the code is</h2>
     <div class="note">
-      <p>Most of what I have built is not public, for specific reasons. PsyAIde is a commercial clinical product; the contribution graph on GitHub is where that work went. The columnar database and the inference engine sit on Harvard infrastructure under course policy — the engine contains a staff test harness and a reference implementation, and publishing it would leak assessment material. Research code is under revision or anonymised for submission.</p>
+      <p>Most of what I have built is not public, for specific reasons. PsyAIde is a commercial clinical product; the contribution graph on GitHub is where that work went. The columnar database and the inference engine sit on Harvard infrastructure under course policy. The engine contains a staff test harness and a reference implementation, and publishing it would leak assessment material. Research code is under revision or anonymised for submission.</p>
       <p>What can be published will appear on <a href="https://github.com/Sarthak-Baral">GitHub</a> as it clears review, starting with the work that is mine alone.</p>
     </div>
   </section>
@@ -230,16 +230,17 @@
     <h2>Education</h2>
 
     <div class="entry">
-      <div class="line"><h3>Harvard University Extension School — Master of Liberal Arts (ALM), Data Science</h3><span class="when">Expected Feb 2027</span></div>
-      <p class="org">In progress — coursework completing December 2026; degree conferral expected February 2027. GPA 3.75 / 4.0.</p>
+      <div class="line"><h3>Harvard University Extension School</h3><span class="when">Expected Feb 2027</span></div>
+      <p class="org">Master of Liberal Arts (ALM), Data Science. In progress: coursework completing December 2026, degree conferral expected February 2027. GPA 3.75 / 4.0.</p>
       <ul class="facts">
         <li>Completed (ten graduate courses): Foundations of Data Science &amp; Engineering; Statistical Modelling; Deep Learning; Natural Language Processing; Advanced Machine Learning, Data Mining &amp; AI; Data Systems (CS165); Big Data Systems (CS265); Applied Machine Learning to Finance; High Performance Computing (CS 2050); Foundations of Large Language Models (CSCI E-222).</li>
-        <li>In progress: NVIDIA-sponsored Physical AI capstone, June–December 2026 — three-week on-campus pre-capstone residency (19 June – 10 July 2026), asynchronous work from August, formal term from September.</li>
+        <li>In progress: NVIDIA-sponsored Physical AI capstone, June to December 2026, in three phases: a three-week on-campus pre-capstone residency (19 June to 10 July 2026), asynchronous work from August, and the formal term from September.</li>
       </ul>
     </div>
 
     <div class="entry">
-      <div class="line"><h3>King’s College London — BSc Computer Science</h3><span class="when">Sep 2019 – Jul 2023</span></div>
+      <div class="line"><h3>King’s College London</h3><span class="when">Sep 2019 – Jul 2023</span></div>
+      <p class="org">BSc Computer Science</p>
       <ul class="facts">
         <li>Modules: Operating Systems; Data Structures &amp; Algorithms; Databases; Networking; Software Development Lifecycle; Human–Computer Interaction; Machine Learning; AI Reasoning &amp; Decision Making; Cryptography.</li>
       </ul>
