@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sarthak Baral, software engineer</title>
-<meta name="description" content="Sarthak Baral: co-founder and CTO of PsyAIde, validation and reproducibility owner on an NVIDIA-sponsored Harvard capstone. Experience, projects, education and contact.">
+<title>Sarthak Baral</title>
+<meta name="description" content="Sarthak Baral: software engineer, AI engineer and researcher. CTO and sole engineer of PsyAIde; release-gate owner on an NVIDIA-sponsored Harvard capstone. Decisions, evidence, limits and contact.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -113,7 +113,7 @@
 
   <section id="about">
     <h2>About</h2>
-    <p>Software engineer and co-founder. Sole engineering contributor to a live clinical decision-support platform for psychiatric assessment, from architecture through production, and validation and reproducibility owner operating the release gate on an NVIDIA-sponsored Harvard capstone. BSc Computer Science, King’s College London; ALM in Data Science at Harvard University Extension School, coursework completing December 2026. Building software for clinical users since 2021.</p>
+    <p>Software engineer, AI engineer and researcher, with one habit across all three: I measure before I claim. I build systems that can be checked and that refuse when the evidence is insufficient, and I audit what I have built before describing it. I am co-founder and CTO of PsyAIde, Inc., and its sole engineering contributor, building retrieval-grounded clinical decision support for psychiatry with a clinician co-founder who leads the clinical side. I also hold the evidence authority, and operate the release gate, on an NVIDIA-sponsored Physical AI capstone at Harvard Extension School.</p>
   </section>
 
   <section id="experience">
@@ -121,22 +121,19 @@
 
     <div class="entry">
       <div class="line"><h3>Co-founder &amp; Chief Technology Officer</h3><span class="when">Feb 2026 – present</span></div>
-      <p class="org">PsyAIde, Inc. (psyaide.ai), clinical decision-support for psychiatry</p>
-      <ul class="facts">
-        <li>Sole engineering contributor to a clinical decision-support platform for psychiatric assessment, from architecture through deployment; shipped v0.5.0 within three months of founding. Co-founded with a clinician who leads the clinical side.</li>
-        <li>Built the retrieval-grounded diagnostic pipeline: sparse retrieval over a 984-row clinical criteria corpus, clause-scoped negation handling, grounding-gap detection, and fail-closed clearance so the system abstains rather than guesses where evidence is insufficient.</li>
-        <li>FastAPI/PostgreSQL backend (60 tables, 72 migrations, 290 API operations) with three React applications on AWS (RDS, S3, KMS, Secrets Manager, CloudTrail), on a HIPAA-aligned technical architecture with documented technical controls.</li>
-        <li>2,159 automated tests, a nine-job CI pipeline and 185 recorded architecture decisions across ~74,000 lines of application code and ~37,000 of test code (repository figures as of September 2026).</li>
-        <li>Live pilot across two deployment types: five independent psychiatrists in private practice, plus one residential facility serving ~37 users. Pilot participants, not paying customers.</li>
-      </ul>
+      <p class="org">PsyAIde, Inc. (psyaide.ai), clinical decision support for psychiatry, co-founded with a clinician who leads the clinical side. I am the sole engineering contributor.</p>
+      <p><strong>Decisions I made, and what they cost.</strong> I chose purpose-built sparse retrieval (BM25-style ranking) over generic embedding search, with retrieval provenance so that every supporting criterion traces to a row of a curated 984-row clinical criteria table. I made the system decline to produce a formulation when grounding is insufficient; that means it sometimes gives no answer, and the grounding-gap rate is tracked as a quality signal. I blocked, fail-closed, any model provider without a business-associate agreement. I made standards gates rather than guidance: a nine-job CI pipeline with 2,809 automated tests, import-linter architecture contracts and dependency audits, and a check that fails the build if an architecture decision record is cited but does not exist. I audit the system in dated documents (August, September and October 2026), each superseded rather than edited, with a claim-verification table that governs what is said about it externally.</p>
+      <p><strong>Where it stands (verified 20 October 2026).</strong> Live in production with five independent psychiatrists in private practice, plus one residential facility serving ~37 users, all pilot participants. v0.5.0 shipped within three months of founding; 471 commits across 259 pull requests; automated deployment since 16 October 2026 (ADR-215); 27 of 27 live checks passed. FastAPI and PostgreSQL with three React 19 applications on AWS (RDS, S3, KMS, Secrets Manager, CloudTrail), Google OAuth with TOTP MFA, TLS 1.2/1.3 with HSTS, a multi-provider LLM gateway with OpenAI/Anthropic failover, on a HIPAA-aligned technical architecture with documented technical controls. An eMAR is in use in a live residential home.</p>
+      <p><strong>What is not done.</strong> E-prescribing is built against a certification environment and is not live. Speech-to-text is built but disabled platform-wide. 49 backend tests are skipped because the licensed e-prescribing schemas are not in the repository. The October audit lists the remaining live defects and feeds a seven-week work plan with my co-founder.</p>
     </div>
 
     <div class="entry">
       <div class="line"><h3>Validation &amp; Reproducibility Owner</h3><span class="when">Jun 2026 – present</span></div>
       <p class="org">NVIDIA-sponsored Physical AI Capstone, Harvard University Extension School, Group 1 (Digital Twin)</p>
       <ul class="facts">
-        <li>Validation and reproducibility owner on Group 1 (Digital Twin) of an NVIDIA-sponsored Harvard capstone building a reproducible JWST digital twin and a closed-loop benchmark for learned autonomous spacecraft inspection.</li>
-        <li>Own seven deliverables (automated acceptance script, per-release validation renders, render regression suite, reconstruction drills, sensor/renderer alignment for training and evaluation) and operate the release gate on all three scene releases.</li>
+        <li>Hold the evidence authority on Group 1 (Digital Twin) of an NVIDIA-sponsored Harvard capstone building a reproducible JWST digital twin and a closed-loop benchmark for learned autonomous spacecraft inspection: named validation and reproducibility owner, with release-gate authority delegated by the industrial sponsor.</li>
+        <li>Operate the release gate on all three scene releases: a scene ships only when the automated acceptance script passes; own the per-release validation renders, render regression suite, reconstruction drills and sensor/renderer alignment for training and evaluation.</li>
+        <li>The validation protocol distinguishes byte-identical regeneration from statistical reproduction and requires finite-sample bounds rather than claims of zero risk.</li>
       </ul>
     </div>
 
@@ -144,7 +141,7 @@
       <div class="line"><h3>Undergraduate Research Fellow</h3><span class="when">Aug – Oct 2023</span></div>
       <p class="org">King’s College London</p>
       <ul class="facts">
-        <li>Tested whether LLMs can automate OWL2→OWL1 ontology migration, benchmarking zero-, one- and few-shot prompting across GPT-3/4, Bard and LLaMA; found few-shot consistently outperformed zero-shot on constraint-satisfaction metrics. Presented in departmental seminars.</li>
+        <li>Evaluated whether LLMs could automate OWL2→OWL1 ontology migration by building a Python/Java validation pipeline that checks ontology rule violations, then benchmarking zero-, one- and few-shot prompting across GPT-3/4, Bard and LLaMA: few-shot consistently outperformed zero-shot on constraint-satisfaction metrics. Presented in departmental seminars.</li>
       </ul>
     </div>
 
@@ -152,7 +149,7 @@
       <div class="line"><h3>Teaching Assistant, Software Development</h3><span class="when">Sep 2022 – Apr 2023</span></div>
       <p class="org">Department of Informatics, King’s College London</p>
       <ul class="facts">
-        <li>Guided 40+ students across multiple teams through full SDLC projects.</li>
+        <li>Guided 40+ students, organised in teams, through full software development lifecycle projects.</li>
       </ul>
     </div>
 
@@ -160,7 +157,7 @@
       <div class="line"><h3>Backend Developer</h3><span class="when">Jan – Apr 2021</span></div>
       <p class="org">King’s Pediatric Liver Centre</p>
       <ul class="facts">
-        <li>Replaced a manual patient-data workflow with a Django/PostgreSQL/REST application on Heroku, enabling clinical staff to manage and query records in a browser.</li>
+        <li>Replaced a manual patient-data workflow with a Django/PostgreSQL/REST application on Heroku so that clinical staff could manage and query records in a browser: first clinical software delivered to clinical users, five years before founding PsyAIde.</li>
       </ul>
     </div>
   </section>
@@ -172,7 +169,7 @@
       <div class="line"><h3>Llama-3-8B inference engine in C++/CUDA</h3><span class="when">Mar – May 2026</span></div>
       <p class="org">Big Data Systems (CS265), Harvard University Extension School</p>
       <ul class="facts">
-        <li>Built a Llama-3-8B forward pass from scratch in C++/CUDA on a course skeleton, with no PyTorch or HuggingFace at inference time. Verified element-wise against a PyTorch reference across all 18 staff tests, including multi-token autoregressive generation, while streaming a 27.6 GB model through 8 GB of VRAM.</li>
+        <li>Treated verification as the deliverable: a complete Llama-3-8B forward pass from scratch in C++/CUDA on a course skeleton, with no PyTorch or HuggingFace at inference time, verified element-wise against a PyTorch reference at 1e-2 across all 18 staff tests, including multi-token autoregressive generation. Fitted a 27.6 GB FP32 model into 8 GB of VRAM by layer-by-layer weight streaming.</li>
       </ul>
     </div>
 
@@ -180,7 +177,7 @@
       <div class="line"><h3>Main-memory columnar data system in C</h3><span class="when">Sep – Dec 2025</span></div>
       <p class="org">Data Systems (CS165), Harvard University Extension School</p>
       <ul class="facts">
-        <li>Main-memory column store in C with a persistent catalogue, mmap I/O, late materialisation, clustered and unclustered B-tree and sorted-column indexes, parallel hash and nested-loop joins, shared scans and thread pools. Source restricted by Harvard course policy.</li>
+        <li>Designed a main-memory column store in C around a persistent catalogue, mmap I/O and late materialisation, with clustered and unclustered B-tree and sorted-column indexes, parallel hash and nested-loop joins, shared scans and thread pools. Source restricted by Harvard course policy.</li>
       </ul>
     </div>
 
@@ -188,7 +185,7 @@
       <div class="line"><h3>N-body simulation across five HPC paradigms</h3><span class="when">Apr – May 2026</span></div>
       <p class="org">High Performance Computing (CS 2050), Harvard University Extension School</p>
       <ul class="facts">
-        <li>Implemented N-body across five HPC paradigms (serial C++, OpenMP, MPI, CUDA naive and tiled, JAX/XLA) with profiling across three toolchains; found the textbook tiled CUDA kernel ~5% slower than naive, with Nsight attributing it to cache behaviour (96.75% vs 0.72% L1/TEX hit rate).</li>
+        <li>Reported a negative result with its confound rather than a speedup: across serial C++, OpenMP, MPI, CUDA (naive and tiled) and JAX/XLA, profiled with Intel VTune, Nsight Compute and custom MPI timers, the textbook shared-memory-tiled CUDA kernel ran ~5% slower than naive, traced by Nsight to cache behaviour (96.75% vs 0.72% L1/TEX hit rate), with both kernels grid-starved at N=8192 (32 blocks on a 58-SM device).</li>
       </ul>
     </div>
 
@@ -196,16 +193,16 @@
       <div class="line"><h3>Cross-domain recommendation without shared users (joint research project)</h3><span class="when">Dec 2025 – Jun 2026</span></div>
       <p class="org">Began in Advanced Machine Learning, Data Mining &amp; AI, Harvard University Extension School; continued as a co-authored research submission to the RecSys 2026 short-paper track with Chloe Seo, now being revised following peer review</p>
       <ul class="facts">
-        <li>Quantified collision-induced ranking collapse in semantic-ID recommendation: 96.4–96.8% of catalogue items share an RQ-VAE code tuple, imposing an oracle HR@10 ceiling of 34–41% under perfect retrieval. The failure is at ranking, not retrieval, and is independent of model quality.</li>
+        <li>Quantified why the approach fails before trying to fix it: 96.4–96.8% of catalogue items share an RQ-VAE code tuple, imposing an oracle HR@10 ceiling of 34–41% under perfect retrieval. The failure is at ranking, not retrieval, and is independent of model quality.</li>
         <li>Designed a cross-domain pipeline for domains sharing no user identifiers: SBERT lookalike matching, three-level RQ-VAE tokenisation, a shared transformer with domain-specific heads and asymmetric InfoNCE alignment, and a collaborative reranker. Full-catalogue evaluation over 36,671 books and 31,516 movies, three seeds, against nine external baselines.</li>
       </ul>
     </div>
 
     <div class="entry">
-      <div class="line"><h3>Generative models and evaluation harness for synthetic limit order books</h3><span class="when">May 2026</span></div>
+      <div class="line"><h3>Evaluation harness for synthetic limit order books</h3><span class="when">May 2026</span></div>
       <p class="org">Applied Machine Learning to Finance, Harvard University Extension School</p>
       <ul class="facts">
-        <li>Built three generative models from scratch and a four-axis evaluation harness for synthetic limit order books, measuring downstream utility against both a real-data ceiling and a majority-class floor rather than in isolation.</li>
+        <li>Built the evaluation before trusting any model: three generative architectures (TimeGAN, conditional masked autoregressive flow, 1D DDPM) from scratch on LOBSTER Level-10 data, judged on four axes (statistical fidelity, stylised-fact realism, downstream utility, a nearest-neighbour privacy proxy), with utility measured against both a train-on-real ceiling and a majority-class floor: TSTR macro-F1 0.305 against a 0.309 ceiling and a 0.220 floor. No single model won, and the harness is what showed it.</li>
       </ul>
     </div>
 
@@ -213,7 +210,7 @@
       <div class="line"><h3>Evaluation-protocol study of LLM recommendation (joint project)</h3><span class="when">Apr – May 2026</span></div>
       <p class="org">Foundations of Large Language Models (CSCI E-222), Harvard University Extension School</p>
       <ul class="facts">
-        <li>Showed HR@10 rising from 0.0445 to 0.2667 on identical weights, data and candidate pool by replacing title generation with log-likelihood scoring: a measurement artefact, not a capability difference. Joint project (Seo first author); owned the implementation and experimental pipeline.</li>
+        <li>Showed that the scoring protocol, not the model, explained the gap: HR@10 rose from 0.0445 to 0.2667 on identical weights, data and candidate pool when title generation was replaced by log-likelihood scoring. Joint project (Seo first author); owned the implementation and experimental pipeline.</li>
       </ul>
     </div>
   </section>
@@ -251,8 +248,9 @@
     <h2>Skills</h2>
     <dl class="skills">
       <dt>Programming</dt><dd>Python, C++, CUDA, C, SQL, JavaScript (React), Java</dd>
-      <dt>Backend and platform</dt><dd>FastAPI, Django, REST API design, PostgreSQL and schema migrations, React, AWS (RDS, S3, KMS, Secrets Manager, CloudTrail), Heroku</dd>
-      <dt>Engineering practice</dt><dd>Automated test suites and regression suites, CI pipelines, release gating and acceptance scripts, pull-request workflow, architecture decision records</dd>
+      <dt>Backend and platform</dt><dd>FastAPI, Django, REST API design, PostgreSQL and Alembic migrations, React, AWS (RDS, S3, KMS, Secrets Manager, CloudTrail), Docker, Heroku</dd>
+      <dt>Standards and release</dt><dd>Architecture decision records with CI enforcement, import-linter architecture contracts, automated test suites run on SQLite and PostgreSQL, dependency auditing (pip-audit, npm audit), release gating and acceptance scripts, dated self-audits</dd>
+      <dt>Security posture</dt><dd>OAuth with TOTP MFA, TLS/HSTS configuration, fail-closed vendor clearance, BAA register and PHI data inventory</dd>
       <dt>ML and HPC</dt><dd>PyTorch, JAX, OpenMP, MPI, Nsight Compute, Intel VTune</dd>
       <dt>Languages spoken</dt><dd>Nepali, English, Spanish (fluent), Catalan (intermediate)</dd>
     </dl>
