@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sarthak Baral — software engineer</title>
+<meta name="description" content="Sarthak Baral: co-founder and CTO of PsyAIde, validation and reproducibility owner on an NVIDIA-sponsored Harvard capstone. Experience, projects, education and contact.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #ffffff;
+    --ink: #1a1e23;
+    --muted: #5a6370;
+    --rule: #dde2e7;
+    --accent: #0b6b6b;
+    --accent-soft: #e6f1f1;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #0f1418;
+      --ink: #e7ebee;
+      --muted: #9aa4ae;
+      --rule: #2a333b;
+      --accent: #63c5c5;
+      --accent-soft: #15292b;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { font-size: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  main {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 4rem 1.25rem 5rem;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover, a:focus-visible { text-decoration: underline; text-underline-offset: 0.15em; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  header h1 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: 1.1;
+    margin: 0 0 0.75rem;
+  }
+  header .lede {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    margin: 0 0 1.25rem;
+    max-width: 34rem;
+  }
+  .contact { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 0.35rem 1.5rem; color: var(--muted); }
+
+  section { border-top: 1px solid var(--rule); padding-top: 1.5rem; margin-top: 2.25rem; }
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 0 1rem;
+  }
+  .entry { margin: 0 0 1.4rem; }
+  .entry:last-child { margin-bottom: 0; }
+  .line { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; align-items: baseline; }
+  .line h3 { font-size: 1.0625rem; font-weight: 600; margin: 0; }
+  .line .when { color: var(--muted); white-space: nowrap; }
+  .org { color: var(--muted); font-style: italic; margin: 0.1rem 0 0.4rem; }
+  ul.facts { margin: 0; padding-left: 1.1rem; }
+  ul.facts li { margin: 0 0 0.35rem; }
+  p { margin: 0 0 0.9rem; }
+
+  .note {
+    border-left: 3px solid var(--accent);
+    background: var(--accent-soft);
+    padding: 1rem 1.25rem;
+    margin: 0;
+  }
+  .note p:last-child { margin-bottom: 0; }
+
+  dl.skills { margin: 0; display: grid; grid-template-columns: max-content 1fr; column-gap: 1.25rem; row-gap: 0.45rem; }
+  dl.skills dt { font-weight: 600; }
+  dl.skills dd { margin: 0; }
+  @media (max-width: 540px) {
+    header h1 { font-size: 1.9rem; }
+    dl.skills { grid-template-columns: 1fr; row-gap: 0.15rem; }
+    dl.skills dd { margin-bottom: 0.5rem; }
+  }
+  footer { margin-top: 3rem; color: var(--muted); font-size: 0.95rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Sarthak Baral</h1>
+    <p class="lede">I build AI systems for settings where being wrong is expensive.</p>
+    <ul class="contact">
+      <li>Kathmandu, Nepal</li>
+      <li><a href="mailto:baralsam3@gmail.com">baralsam3@gmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/sarthakbaral/">LinkedIn</a></li>
+      <li><a href="https://github.com/Sarthak-Baral">GitHub</a></li>
+    </ul>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>Software engineer and co-founder. Sole engineering contributor to a live clinical decision-support platform for psychiatric assessment, from architecture through production, and validation and reproducibility owner operating the release gate on an NVIDIA-sponsored Harvard capstone. BSc Computer Science, King’s College London; ALM in Data Science at Harvard University Extension School, coursework completing December 2026. Building software for clinical users since 2021.</p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <div class="entry">
+      <div class="line"><h3>Co-founder &amp; Chief Technology Officer</h3><span class="when">Feb 2026 – present</span></div>
+      <p class="org">PsyAIde, Inc. (psyaide.ai) — clinical decision-support for psychiatry</p>
+      <ul class="facts">
+        <li>Sole engineering contributor to a clinical decision-support platform for psychiatric assessment, from architecture through deployment; shipped v0.5.0 within three months of founding. Co-founded with a clinician who leads the clinical side.</li>
+        <li>Built the retrieval-grounded diagnostic pipeline: sparse retrieval over a 984-row clinical criteria corpus, clause-scoped negation handling, grounding-gap detection, and fail-closed clearance so the system abstains rather than guesses where evidence is insufficient.</li>
+        <li>FastAPI/PostgreSQL backend — 60 tables, 72 migrations, 290 API operations — with three React applications on AWS (RDS, S3, KMS, Secrets Manager, CloudTrail); HIPAA-aligned technical architecture with documented technical controls.</li>
+        <li>2,159 automated tests, a nine-job CI pipeline and 185 recorded architecture decisions across ~74,000 lines of application code and ~37,000 of test code (repository figures as of September 2026).</li>
+        <li>Live pilot — pilot participants, not paying customers — across two deployment types: five independent psychiatrists in private practice, plus one residential facility serving ~37 users.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="line"><h3>Validation &amp; Reproducibility Owner</h3><span class="when">Jun 2026 – present</span></div>
+      <p class="org">NVIDIA-sponsored Physical AI Capstone, Harvard University Extension School — Group 1 (Digital Twin)</p>
+      <ul class="facts">
+        <li>Validation and reproducibility owner on Group 1 (Digital Twin) of an NVIDIA-sponsored Harvard capstone building a reproducible JWST digital twin and a closed-loop benchmark for learned autonomous spacecraft inspection.</li>
+        <li>Own seven deliverables — automated acceptance script, per-release validation renders, render regression suite, reconstruction drills, sensor/renderer alignment for training and evaluation — and operate the release gate on all three scene releases.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="line"><h3>Undergraduate Research Fellow</h3><span class="when">Aug – Oct 2023</span></div>
+      <p class="org">King’s College London</p>
+      <ul class="facts">
+        <li>Tested whether LLMs can automate OWL2→OWL1 ontology migration, benchmarking zero-, one- and few-shot prompting across GPT-3/4, Bard and LLaMA; found few-shot consistently outperformed zero-shot on constraint-satisfaction metrics. Presented in departmental seminars.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="line"><h3>Teaching Assistant, Software Development</h3><span class="when">Sep 2022 – Apr 2023</span></div>
+      <p class="org">Department of Informatics, King’s College London</p>
+      <ul class="facts">
+        <li>Guided 40+ students across multiple teams through full SDLC projects.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="line"><h3>Backend Developer</h3><span class="when">Jan – Apr 2021</span></div>
+      <p class="org">King’s Pediatric Liver Centre</p>
+      <ul class="facts">
+        <li>Replaced a manual patient-data workflow with a Django/PostgreSQL/REST application on Heroku, enabling clinical staff to manage and query records in a browser.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="entry">
+      <div class="line"><h3>Llama-3-8B inference engine in C++/CUDA</h3><span class="when">Mar – May 2026</span></div>
+      <p class="org">Big Data Systems (CS265), Harvard University Extension School</p>
+      <ul class="facts">
+        <li>Built a Llama-3-8B forward pass from scratch in C++/CUDA on a course skeleton, with no PyTorch or HuggingFace at inference time — verified element-wise against a PyTorch reference across all 18 staff tests, including multi-token autoregressive generation, streaming a 27.6 GB model through 8 GB of VRAM.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="line"><h3>Main-memory columnar data system in C</h3><span class="when">Sep – Dec 2025</span></div>
+      <p class="org">Data Systems (CS165), Harvard University Extension School</p>
+      <ul class="facts">
+        <li>Main-memory column store in C with a persistent catalogue, mmap I/O, late materialisation, clustered and unclustered B-tree and sorted-column indexes, parallel hash and nested-loop joins, shared scans and thread pools. Source restricted by Harvard course policy.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="line"><h3>N-body simulation across five HPC paradigms</h3><span class="when">Apr – May 2026</span></div>
+      <p class="org">High Performance Computing (CS 2050), Harvard University Extension School</p>
+      <ul class="facts">
+        <li>Implemented N-body across five HPC paradigms (serial C++, OpenMP, MPI, CUDA naive and tiled, JAX/XLA) with profiling across three toolchains; found the textbook tiled CUDA kernel ~5% slower than naive, with Nsight attributing it to cache behaviour (96.75% vs 0.72% L1/TEX hit rate).</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="line"><h3>Cross-domain recommendation without shared users (joint research project)</h3><span class="when">Dec 2025 – Jun 2026</span></div>
+      <p class="org">Began in Advanced Machine Learning, Data Mining &amp; AI, Harvard University Extension School; continued as a co-authored research submission to the RecSys 2026 short-paper track, with Chloe Seo — being revised following peer review</p>
+      <ul class="facts">
+        <li>Quantified collision-induced ranking collapse in semantic-ID recommendation: 96.4–96.8% of catalogue items share an RQ-VAE code tuple, imposing an oracle HR@10 ceiling of 34–41% under perfect retrieval — a ranking failure, not a retrieval failure, independent of model quality.</li>
+        <li>Designed a cross-domain pipeline for domains sharing no user identifiers: SBERT lookalike matching → three-level RQ-VAE tokenisation → shared transformer with domain-specific heads and asymmetric InfoNCE alignment → collaborative reranker; full-catalogue evaluation over 36,671 books and 31,516 movies, three seeds, against nine external baselines.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="line"><h3>Generative models and evaluation harness for synthetic limit order books</h3><span class="when">May 2026</span></div>
+      <p class="org">Applied Machine Learning to Finance, Harvard University Extension School</p>
+      <ul class="facts">
+        <li>Built three generative models from scratch and a four-axis evaluation harness for synthetic limit order books, measuring downstream utility against both a real-data ceiling and a majority-class floor rather than in isolation.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="line"><h3>Evaluation-protocol study of LLM recommendation (joint project)</h3><span class="when">Apr – May 2026</span></div>
+      <p class="org">Foundations of Large Language Models (CSCI E-222), Harvard University Extension School</p>
+      <ul class="facts">
+        <li>Showed HR@10 rising from 0.0445 to 0.2667 on identical weights, data and candidate pool by replacing title generation with log-likelihood scoring — a measurement artefact, not a capability difference. Joint project (Seo first author); owned the implementation and experimental pipeline.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="code">
+    <h2>Where the code is</h2>
+    <div class="note">
+      <p>Most of what I have built is not public, for specific reasons. PsyAIde is a commercial clinical product; the contribution graph on GitHub is where that work went. The columnar database and the inference engine sit on Harvard infrastructure under course policy — the engine contains a staff test harness and a reference implementation, and publishing it would leak assessment material. Research code is under revision or anonymised for submission.</p>
+      <p>What can be published will appear on <a href="https://github.com/Sarthak-Baral">GitHub</a> as it clears review, starting with the work that is mine alone.</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+
+    <div class="entry">
+      <div class="line"><h3>Harvard University Extension School — Master of Liberal Arts (ALM), Data Science</h3><span class="when">Expected Feb 2027</span></div>
+      <p class="org">In progress — coursework completing December 2026; degree conferral expected February 2027. GPA 3.75 / 4.0.</p>
+      <ul class="facts">
+        <li>Completed (ten graduate courses): Foundations of Data Science &amp; Engineering; Statistical Modelling; Deep Learning; Natural Language Processing; Advanced Machine Learning, Data Mining &amp; AI; Data Systems (CS165); Big Data Systems (CS265); Applied Machine Learning to Finance; High Performance Computing (CS 2050); Foundations of Large Language Models (CSCI E-222).</li>
+        <li>In progress: NVIDIA-sponsored Physical AI capstone, June–December 2026 — three-week on-campus pre-capstone residency (19 June – 10 July 2026), asynchronous work from August, formal term from September.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="line"><h3>King’s College London — BSc Computer Science</h3><span class="when">Sep 2019 – Jul 2023</span></div>
+      <ul class="facts">
+        <li>Modules: Operating Systems; Data Structures &amp; Algorithms; Databases; Networking; Software Development Lifecycle; Human–Computer Interaction; Machine Learning; AI Reasoning &amp; Decision Making; Cryptography.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <dl class="skills">
+      <dt>Programming</dt><dd>Python, C++, CUDA, C, SQL, JavaScript (React), Java</dd>
+      <dt>Backend and platform</dt><dd>FastAPI, Django, REST API design, PostgreSQL and schema migrations, React, AWS (RDS, S3, KMS, Secrets Manager, CloudTrail), Heroku</dd>
+      <dt>Engineering practice</dt><dd>Automated test suites and regression suites, CI pipelines, release gating and acceptance scripts, pull-request workflow, architecture decision records</dd>
+      <dt>ML and HPC</dt><dd>PyTorch, JAX, OpenMP, MPI, Nsight Compute, Intel VTune</dd>
+      <dt>Languages spoken</dt><dd>Nepali, English, Spanish (fluent), Catalan (intermediate)</dd>
+    </dl>
+  </section>
+
+  <footer>
+    <p>Sarthak Baral · Kathmandu · <a href="mailto:baralsam3@gmail.com">baralsam3@gmail.com</a></p>
+  </footer>
+</main>
+</body>
+</html>
