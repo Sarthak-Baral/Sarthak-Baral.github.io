@@ -167,7 +167,7 @@
 
     <div class="entry">
       <div class="line"><h3>Llama-3-8B inference engine in C++/CUDA</h3><span class="when">Mar – May 2026</span></div>
-      <p class="org">Big Data Systems (CS265), Harvard University Extension School</p>
+      <p class="org">Big Data Systems (CSCI 265), Harvard University Extension School</p>
       <ul class="facts">
         <li>Treated verification as the deliverable: a complete Llama-3-8B forward pass from scratch in C++/CUDA on a course skeleton, with no PyTorch or HuggingFace at inference time, verified element-wise against a PyTorch reference at 1e-2 across all 18 staff tests, including multi-token autoregressive generation. Fitted a 27.6 GB FP32 model into 8 GB of VRAM by layer-by-layer weight streaming.</li>
       </ul>
@@ -175,7 +175,7 @@
 
     <div class="entry">
       <div class="line"><h3>Main-memory columnar data system in C</h3><span class="when">Sep – Dec 2025</span></div>
-      <p class="org">Data Systems (CS165), Harvard University Extension School</p>
+      <p class="org">Data Systems (CSCI 165), Harvard University Extension School</p>
       <ul class="facts">
         <li>Designed a main-memory column store in C around a persistent catalogue, mmap I/O and late materialisation, with clustered and unclustered B-tree and sorted-column indexes, parallel hash and nested-loop joins, shared scans and thread pools. Source restricted by Harvard course policy.</li>
       </ul>
@@ -183,7 +183,7 @@
 
     <div class="entry">
       <div class="line"><h3>N-body simulation across five HPC paradigms</h3><span class="when">Apr – May 2026</span></div>
-      <p class="org">High Performance Computing (CS 2050), Harvard University Extension School</p>
+      <p class="org">High Performance Computing (CSCI 205), Harvard University Extension School</p>
       <ul class="facts">
         <li>Reported a negative result with its confound rather than a speedup: across serial C++, OpenMP, MPI, CUDA (naive and tiled) and JAX/XLA, profiled with Intel VTune, Nsight Compute and custom MPI timers, the textbook shared-memory-tiled CUDA kernel ran ~5% slower than naive, traced by Nsight to cache behaviour (96.75% vs 0.72% L1/TEX hit rate), with both kernels grid-starved at N=8192 (32 blocks on a 58-SM device).</li>
       </ul>
@@ -191,7 +191,7 @@
 
     <div class="entry">
       <div class="line"><h3>Cross-domain recommendation without shared users (joint research project)</h3><span class="when">Dec 2025 – Jun 2026</span></div>
-      <p class="org">Began in Advanced Machine Learning, Data Mining &amp; AI, Harvard University Extension School; continued as a co-authored research submission to the RecSys 2026 short-paper track with Chloe Seo, now being revised following peer review</p>
+      <p class="org">Began in Advanced Machine Learning (CSCI 82), Harvard University Extension School; continued as a co-authored research submission to the RecSys 2026 short-paper track with Chloe Seo, now being revised following peer review</p>
       <ul class="facts">
         <li>Quantified why the approach fails before trying to fix it: 96.4–96.8% of catalogue items share an RQ-VAE code tuple, imposing an oracle HR@10 ceiling of 34–41% under perfect retrieval. The failure is at ranking, not retrieval, and is independent of model quality.</li>
         <li>Designed a cross-domain pipeline for domains sharing no user identifiers: SBERT lookalike matching, three-level RQ-VAE tokenisation, a shared transformer with domain-specific heads and asymmetric InfoNCE alignment, and a collaborative reranker. Full-catalogue evaluation over 36,671 books and 31,516 movies, three seeds, against nine external baselines.</li>
@@ -200,7 +200,7 @@
 
     <div class="entry">
       <div class="line"><h3>Evaluation harness for synthetic limit order books</h3><span class="when">May 2026</span></div>
-      <p class="org">Applied Machine Learning to Finance, Harvard University Extension School</p>
+      <p class="org">Quantitative Finance and Machine Learning (CSCI 278), Harvard University Extension School</p>
       <ul class="facts">
         <li>Built the evaluation before trusting any model: three generative architectures (TimeGAN, conditional masked autoregressive flow, 1D DDPM) from scratch on LOBSTER Level-10 data, judged on four axes (statistical fidelity, stylised-fact realism, downstream utility, a nearest-neighbour privacy proxy), with utility measured against both a train-on-real ceiling and a majority-class floor: TSTR macro-F1 0.305 against a 0.309 ceiling and a 0.220 floor. No single model won, and the harness is what showed it.</li>
       </ul>
@@ -208,7 +208,7 @@
 
     <div class="entry">
       <div class="line"><h3>Evaluation-protocol study of LLM recommendation (joint project)</h3><span class="when">Apr – May 2026</span></div>
-      <p class="org">Foundations of Large Language Models (CSCI E-222), Harvard University Extension School</p>
+      <p class="org">Large Language Models (CSCI 222), Harvard University Extension School</p>
       <ul class="facts">
         <li>Showed that the scoring protocol, not the model, explained the gap: HR@10 rose from 0.0445 to 0.2667 on identical weights, data and candidate pool when title generation was replaced by log-likelihood scoring. Joint project (Seo first author); owned the implementation and experimental pipeline.</li>
       </ul>
@@ -227,11 +227,11 @@
     <h2>Education</h2>
 
     <div class="entry">
-      <div class="line"><h3>Harvard University Extension School</h3><span class="when">Expected Feb 2027</span></div>
-      <p class="org">Master of Liberal Arts (ALM), Data Science. In progress: coursework completing December 2026, degree conferral expected February 2027. GPA 3.75 / 4.0.</p>
+      <div class="line"><h3>Harvard University Extension School</h3><span class="when">Expected Spring 2027</span></div>
+      <p class="org">Master of Liberal Arts (ALM), Data Science, capstone track. In progress: coursework completing December 2026, degree conferral expected Spring 2027. Programme GPA 3.75 / 4.0.</p>
       <ul class="facts">
-        <li>Completed (ten graduate courses): Foundations of Data Science &amp; Engineering; Statistical Modelling; Deep Learning; Natural Language Processing; Advanced Machine Learning, Data Mining &amp; AI; Data Systems (CS165); Big Data Systems (CS265); Applied Machine Learning to Finance; High Performance Computing (CS 2050); Foundations of Large Language Models (CSCI E-222).</li>
-        <li>In progress: NVIDIA-sponsored Physical AI capstone, June to December 2026, in three phases: a three-week on-campus pre-capstone residency (19 June to 10 July 2026), asynchronous work from August, and the formal term from September.</li>
+        <li>Completed (44 of 48 credits, eleven courses): Foundations of Data Science and Engineering (CSCI 101); Introduction to Statistical Modeling (STAT 109); Deep Learning (CSCI 89); Introduction to Natural Language Processing (CSCI 89B); Advanced Machine Learning (CSCI 82); Data Systems (CSCI 165); Big Data Systems (CSCI 265); Quantitative Finance and Machine Learning (CSCI 278); High Performance Computing (CSCI 205); Large Language Models (CSCI 222); Data Science Precapstone (CSCI 597).</li>
+        <li>In progress: Data Science Capstone (CSCI 599A), the NVIDIA-sponsored Physical AI capstone, June to December 2026, in three phases: a three-week on-campus pre-capstone residency (19 June to 10 July 2026), asynchronous work from August, and the formal term from September.</li>
       </ul>
     </div>
 
